@@ -92,7 +92,7 @@ def chat():
                                                               "tool_call_id": tool_call.id,
                                                                "output": json.dumps(output)
                                                          }])
-          elif tool_call.function.name == "delete_appointmentk":
+          elif tool_call.function.name == "delete_appointment":
             arguments = json.loads(tool_call.function.arguments)
             output = functions.delete_appointment(arguments["name"], arguments["email"], arguments["date"], arguments["time"], arguments["company"])
             # Debugging: Protokollierung der gesendeten Ausgabe

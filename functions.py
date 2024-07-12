@@ -24,11 +24,8 @@ def book_appointment(name, email, date, time, company):
       "email": email,
       "date": date, 
       "time": time,
-      "company": company
-  }
-  url = "https://hook.eu2.make.com/rmrrl6tzvwd87faubhhssq7w7rcx461f"
-  headers = {"Content-Type": "application/json"}
-
+      "company": compa
+    }
   #debug
   print(data) 
   print(f"[DEBUG] Daten für book_appointment: {json.dumps(data, indent=2)}")
