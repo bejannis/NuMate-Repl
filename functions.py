@@ -24,7 +24,7 @@ def book_appointment(name, email, date, time, company):
       "email": email,
       "date": date, 
       "time": time,
-      "company": compa
+      "company": company
     }
   #debug
   print(data) 
